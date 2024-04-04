@@ -260,7 +260,7 @@ let package = Package(
                 "Realm/RLMUserAPIKey.mm"
             ],
             resources: [
-                .copy("Realm/PrivacyInfo.xcprivacy")
+                .process("Realm/Resources/PrivacyInfo.xcprivacy")
             ],
             publicHeadersPath: "include",
             cxxSettings: cxxSettings,
@@ -278,7 +278,7 @@ let package = Package(
                 "Tests",
             ],
             resources: [
-                .copy("PrivacyInfo.xcprivacy")
+                .process("Resources/PrivacyInfo.xcprivacy")
             ]
         ),
         .target(
